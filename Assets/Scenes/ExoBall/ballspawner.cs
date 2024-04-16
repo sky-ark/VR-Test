@@ -5,9 +5,16 @@ using UnityEngine;
 public class ballspawner : MonoBehaviour
 {
 
-    public GameObject Ball;
-    public void spawnBall()
+    public GameObject BallDirect;
+    public GameObject BallRay;
+    public void spawnBallDirect()
     {
-        Instantiate(Ball, transform.position, Quaternion.identity);
+        Instantiate(BallDirect, transform.position, Quaternion.identity);
     }
+
+    public void spawnBallRay()
+    {
+        Instantiate(BallDirect, transform.position, Quaternion.identity);
+    }
+    
 }
